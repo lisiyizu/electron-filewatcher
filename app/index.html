@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File watcher!</title>
+  </head>
+  <body>
+    <h1>File Watcher!</h1>
+    usando io.js <script>document.write(process.version)</script>
+    e Electron <script>document.write(process.versions['electron'])</script>.
+    
+    <input id="folder" type="text" value="c:\temp\deleteme\"/>
+    <button id="watch">Monitorar</button>
+    <ul id='textlog'></ul>
+  </body>
+  <script>window.$ = window.jQuery = require('./vendor/jquery-2.2.2.min.js');</script>
+  <script src="./js/script.js"></script>
+</html>

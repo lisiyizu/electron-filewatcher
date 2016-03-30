@@ -1,0 +1,22 @@
+{
+  "name": "filewatcher",
+  "version": "0.0.1",
+  "description": "monitor de arquivos",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm install && electron ./app",
+    "pack": "build",
+    "dist": "build"
+  },
+  "author": "warley noleto",
+  "license": "ISC",
+  "build": {
+    "win": {
+      "noMsi": true
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^2.10.1",
+    "electron-prebuilt": "^0.37.2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "filewatcher",
+  "description": "monitor de arquivos",
+  "version": "0.0.1",
+  "author": "warley noleto",
+  "main": "./main.js",
+  "build": {
+      "app-bundle-id": "com.filewatcher",
+      "app-category-type": "public.app-category.business",
+      "iconUrl": "http://oobj.com.br/favicon.ico",
+      "setupIcon": "http://oobj.com.br/favicon.ico"
+  }
+}
