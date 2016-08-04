@@ -8,9 +8,15 @@
     <h1>File Watcher!</h1>
     usando io.js <script>document.write(process.version)</script>
     e Electron <script>document.write(process.versions['electron'])</script>.
-    
-    <input id="folder" type="text" value="c:\temp\deleteme\"/>
-    <button id="watch">Monitorar</button>
+    <p>
+        <label for="schema">XSD to Validate:</label>
+        <input id="schema" type="text" value="" size="100"/>
+    </p>
+    <p>
+        <label for="schema">Folder to Watch:</label>
+        <input id="folder" type="text" value="c:\temp\deleteme\" size="80"/>
+        <button id="watch">Monitorar</button>
+    </p>
     <ul id='textlog'></ul>
   </body>
   <script>window.$ = window.jQuery = require('./vendor/jquery-2.2.2.min.js');</script>
