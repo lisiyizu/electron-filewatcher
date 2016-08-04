@@ -16,10 +16,11 @@ $(function(){
                     if (exists && event === 'rename'){
                         var xmlStr = fs.readFileSync(filepath, 'utf8');
                         xsd.validateXML(xmlStr, schemapath, (err,result) => {
+                            var timestamp = Date.now();
                             if (!err){
-                                $('#textlog').append('<li>processando: '+filepath+': ' +result.valid+'</li>');
+                                $('#textlog').append('<li>'+timestamp+': processando: '+filepath+': ' +result.valid+'</li>');
                             }else{
-                                $('#textlog').append('<li>'+filepath+': ' +err.message+'</li>');
+                                $('#textlog').append('<li>'+timestamp+': '+filepath+': ' +err.message+'</li>');
                             }
                             fs.unlinkSync(filepath);
                         });
